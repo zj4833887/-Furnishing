@@ -1,13 +1,50 @@
 {
   "pages": [
+    "pages/login/login",
+    "pages/my/my",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/details/detail",
+    "pages/class/class"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#ffcb3f",
+    "navigationBarTitleText": "蜗牛家居",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#853153",
+    "selectedColor": "#956214",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "Image/index/home1.png",
+        "selectedIconPath": "Image/index/home.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "Image/index/category1.png",
+        "selectedIconPath": "Image/index/category.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "Image/index/Shopping1.png",
+        "selectedIconPath": "Image/index/Shopping.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "Image/index/my1.png",
+        "selectedIconPath": "Image/index/my.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

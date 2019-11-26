@@ -1,0 +1,36 @@
+
+<view class="container">
+  <!-- 搜索开始 -->
+  <view class="search">
+    <view class="search-input">
+      <input type="text" placeholder="搜索店内精品"></input>
+    </view>
+    <view class="search-text">搜索</view>
+  </view>
+  <!-- 内容部分开始 -->
+  <view class="content" >
+    <view class="con-left-list">
+      <view class="list-item {{cateId==item.id?'active':''}}" wx:for="{{cate}}" data-id="{{item.id}}"
+      bindtap="categoryToggle">{{item.cname}}</view>
+    </view>
+   
+    <scroll-view class="con-right" scroll-y="true">
+      <view class="banner" wx:for="{{cate}}" wx:key="{{item.id}}" wx:if="{{cateId==item.id}}"  >
+      <view class="img">
+      <image  src="{{item.thumb}}" style="width:100%;height:100%"></image>
+      </view>
+      </view>
+      <view class="right-title" wx:for="{{cate}}" wx:key="{{item.id}}" wx:if="{{cateId==item.id}}" style="text-align: center;">
+       {{item.cname}}
+      </view>
+      <view class="bottom-goods">
+        <view class="goods-item" wx:for="{{good}}">
+          <navigator url="../details/detail?id={{item.id}}" style="width:100%;height:100%">
+            <image src="{{item.thumb}}"></image>
+            <view class="shangxin">{{item.gname}}</view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

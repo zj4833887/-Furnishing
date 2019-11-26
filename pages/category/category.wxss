@@ -1,0 +1,130 @@
+/* pages/category/category.wxss */
+page{
+  background: #fcfcfc;
+}
+.search{
+  width: 100%;
+  height: 88rpx;
+  background-color: white;
+  padding: 14rpx 24rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.search-input{
+  width: 80%;
+  height: 60rpx;
+}
+.search-input input{
+  width: 100%;
+  height: 100%;
+  border-radius: 40rpx;
+  border: 1px #a19f9f solid;
+  font-size: 24rpx;
+  padding-left: 20rpx;
+}
+.search-text{
+  width: 20%;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  text-align: center
+}
+/* 内容开始 */
+.content{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* 左边开始 */
+.con-left-list{
+  width: 30%;
+  overflow: auto;
+  /* height: 500rpx; */
+}
+.list-item{
+  width: 100%;
+  height: 104rpx;
+  background: #f7f7f7;
+  border-bottom: 1px solid white;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 104rpx;
+  position: relative;
+}
+.active::after{
+  content: '';
+  width: 11rpx;
+  height: 104rpx;
+  background-color: #ffcb3f;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+}
+/* 右边开始 */
+.con-right{
+  width: 70%;
+  height: calc(100vh - 88rpx);
+  padding: 0 24rpx;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.banner{
+  width: 100%;
+  height: 200rpx;
+  display: -webkit-box;
+  flex-direction: column;
+}
+.img{
+  width: 100%;
+  height: 200rpx;
+}
+.img>image{
+  width: 100%;
+  height: 100%;
+}
+.right-title{
+  width: 100%;
+  height: 113rpx;
+  padding-top: 58rpx;
+  box-sizing: border-box;
+}
+.right-title image{
+  width: 333rpx;
+  height: 36rpx;
+  display: block;
+  margin: 0 auto;
+
+}
+.bottom-goods{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.goods-item{
+  width: 150rpx;
+  height: 200rpx;
+  margin-top: 24rpx;
+}
+.goods-item image{
+  width: 100%;
+  height: 142rpx;
+  background-color: pink;
+}
+.bottom-goods::after{
+content:' ';
+width:150rpx; 
+height:0;
+display:block;
+}
+.shangxin{
+  font-size: 22rpx;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

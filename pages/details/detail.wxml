@@ -1,0 +1,133 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <!-- nav开始 -->
+  <view class="nav">
+    <view class="nav-top">
+      <view class="left">
+        <image src="../../Image/detail/none.png"></image>
+      </view>
+      <view class="logo">
+        <!-- <image src="../../Image/detail/logo.png"></image> -->
+      </view>
+      <view class="right">
+        <image src="../../Image/detail/more.png"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 轮播图开始 -->
+  <view class="banner-box">
+    <swiper autoplay='true' indicator-dots='true' easing-function='linear' circular='true'>
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <image class="banner" src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="bg-color">
+    <!-- 详情描述开始 -->
+  <view class="description-box">
+    <view class="des-title">{{good.gname}}</view>
+    <image class="des-line" src="../../Image/detail/desline.png"></image>
+    <view class="des-words-box">
+      <view class="des1">
+        <view class="des-right">种类：</view>
+        <view class="des-left">{{good.brand}}</view>
+      </view>
+      <view class="des1">
+        <view class="des-right">规格：</view>
+        <view class="des-left">{{good.norms}}</view>
+      </view>
+      <view class="des1">
+        <view class="des-right">配送：</view>
+        <view class="des-left">免运费</view>
+      </view>
+    </view>
+    <image class="des-line" src="../../Image/detail/desline.png"></image>
+    <view class="price-box">
+      <view class="price">
+        <view class="money">{{good.gmprice}}</view>
+        <view class="rmb">RMB</view>
+      </view>
+    </view>
+    <view class="des-num-box">
+      <view class="num-words">购买数量</view>
+      <view class="number-box">
+        <navigator class="amount">
+          <image class="setamount" src="../../Image/detail/jian.png"></image>
+        </navigator>
+        <view class="number">1</view>
+        <navigator class="amount">
+          <image class="setamount" src="../../Image/detail/j.png"></image>
+        </navigator>
+      </view>
+    </view>  
+  </view>
+  <!-- 商品详情 -->
+  <view class="detail-box">
+    <!-- 标题 -->
+      <view class="goods-title">
+        <view class="goods-title-xian">
+          <view class="goods-title-duan"></view>
+          <view class="goods-title-chang"></view>
+        </view>
+        <view class="goods-title-en">Commodity Details</view>
+        <view class="goods-title-cn">
+          <view class="cn-l">商品</view>
+          <view class="cn-r">详情</view>
+        </view>
+        <view class="goods-title-b"></view>
+        <view>
+        </view>
+      </view>
+      <view class="look-img" wx:for="{{details}}" wx:key="*this">
+        <image class="look" style="width:100%;height:100%;" src="{{item}}"></image>
+      </view>
+      <!-- <view class="detail-words">
+        <view>场景图</view>
+        <view>SCENARIO</view>
+      </view>
+      <view class="back-img">
+        <image class="back" src="{{good.gdetail}}"></image>
+      </view>
+      <view class="detail-words">
+        <view>细节图</view>
+        <view>DETAILS</view>
+      </view> -->
+
+  </view>
+  <!-- 服务保障开始 -->
+  <view class="service-box">
+    <!-- 标题 -->
+      <view class="goods-title">
+        <view class="goods-title-xian">
+          <view class="goods-title-duan"></view>
+          <view class="goods-title-chang"></view>
+        </view>
+        <view class="goods-title-en">NEW PRODUCT</view>
+        <view class="goods-title-cn">
+          <view class="cn-l">服务</view>
+          <view class="cn-r">保障</view>
+        </view>
+        <view class="goods-title-b"></view>
+        <view>
+        </view>
+      </view>
+      <view class="service-img">
+        <image class="service" src="../../Image/detail/service.png"></image>
+      </view>
+  </view>
+  <!-- 立即购买开始 -->
+  <view class="footer-box">
+    <view class="shoucang-box">
+      <image class="shoucang" src="../../Image/detail/coll.png"
+      style="width:100%;height:100%;text-align: center;"
+      ></image>
+      <view class="shoucang-words">收藏</view>
+    </view>
+    <view class="cart-box">加入购物车</view>
+    <view class="nowpay">立即购买</view>
+  </view>
+
+  </view>
+</view>

@@ -1,0 +1,51 @@
+<view class="box">
+  <view class="my-heard">
+    <view class="my-heard-top">
+    <view class="my-heard-left">
+      <view class="my-heard-wz"> 
+      我家有只小狗
+      </view>
+      <view class="my-heard-edit">
+      编辑个人资料
+      </view>
+      </view>
+      <view class="my-heard-right">
+      <image src="../../Image/index/a1.png">
+      </image>
+      </view>
+    </view>
+    <view class="my-heard-top" id="box">
+        <view class="my-heard-box">
+        <view class="">
+        </view>
+        </view>
+        <view class="my-heard-box">
+        </view>
+        <view class="my-heard-box">
+        </view>
+        <view class="my-heard-box">
+        </view>
+        <view class="my-heard-box">
+        </view>
+    </view>
+  </view>
+  <!-- 中间部分开始 -->
+  <view class="my-center-box">
+     <view class="my-center-left">
+     </view>
+     <view class="my-center-left">
+     </view>
+     <view class="my-center-left">
+     </view>
+     <view class="my-center-left">
+     </view>
+     <view class="my-center-left">
+     </view>
+     <view class="my-center-left">
+     </view>
+     <view class="my-center-left">
+     </view>
+  </view>
+  <view class="my-bottom">
+  </view>
+</view>

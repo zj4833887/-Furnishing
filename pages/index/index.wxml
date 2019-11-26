@@ -1,13 +1,133 @@
-<!--index.wxml-->
+<view class="herad">
+<view>产品分类</view>
+<view>产品分类</view>
+<view>产品分类</view>
+<view>产品分类</view>
+</view>
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item >
+            <view class="swiper-item ">
+            <navigator url="../details/detail?id={{item.id}}" class="nav">
+             <image src="{{item}}" class="banner-img" ></image>
+            </navigator>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="page-section" style="margin-top: 40rpx;margin-bottom: 0;">
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+</view>
+<view class="box">
+    <view class="cname">
+    NEW product
+    </view>
+    <view class="name">
+    {{item.cname}}                        
+    </view>
+    <view class="new-bigbox">
+        <view class="new-box">
+        <view class="new-box-img">
+        </view>
+        <view class="new-box-bottom">
+        </view>
+    </view>
+    <view class="new-box">
+      <view class="new-box-img">
+    </view>
+    <view class="new-box-bottom">
+    </view>
+    </view>
+ </view>
+<scroll-view scroll-x="true" > 
+      <view class="banner" scroll-x="true" > 
+           <view class="banner_Item" wx:for="{{good1}}" wx:key="*this">
+           <navigator url="../details/detail?id={{item.id}}"> 
+                 <view class="new-top" >
+                  <image style="width:100%;height:100%;" src="{{item.thumb}}"></image>
+                 </view>
+                 <view class="new-bottom">
+                  <text class="new-bottom-cname">
+                  </text> 
+                  <view class="new-bottom-name">
+                   {{item.gname}}
+                  </view>
+                  <view class="new-bottom-box">
+                  <view class="new-bottom-sale">
+                  {{item.sele}}RMB
+                  </view>
+                  <view class="new-bottom-right">
+                  <navigator url="../details/detail">
+                 点击购买
+                 </navigator>
+                  </view>
+                  </view>
+                 </view>
+                 </navigator>
+          </view> 
+             
+      </view> 
+</scroll-view> 
+<!-- 左右滑动结束 -->
+<view class="kong">
+</view>
+    <view class="cname">
+    NEW product
+    </view>
+    <view class="name">
+    热销 <text class="col">产品</text>                          
+    </view>
+    <view class="product">
+    <navigator url="../details/detail?id={{item.id}}"> 
+        <view class="product-img">
+        <image style="width:100%;height:100%;" src="http://localhost{{img}}">
+        </image>
+        </view>
+        <view class="product-words">
+        {{good.gname}}
+        </view>
+        <view class="product-words-wz">
+        告别繁琐多余的浮夸 保留实用主义的本质
+        </view>
+        <view class="product-sale">
+        {{good.sele}}RMB
+        </view>
+        <view class="product-sale-now">
+        BUY NOW
+        </view>
+        </navigator>
+    </view>
+    <!-- 产品图结束 -->
+    <view class="Subproducts-box">
+      <view class="Subproducts-box-left" wx:for="{{good2}}" wx:key="*this">
+        <view class="Subproducts-box-left-top">
+        <view class="Subproducts-box-wz"> FENDI CASA TUDOR</view>
+        <view class="Subproducts-box-wz-bottom">
+        <navigator url="../details/detail?id={{item.id}}">
+         {{item.gname}} 
+         </navigator>            
+        </view>      
+        </view>
+         <navigator url="../details/detail?id={{item.id}}">
+        <view class="Subproducts-box-left-center">
+        <image  src="{{item.thumb}}">
+        </image>
+        </view>
+         </navigator> 
+        <view class="Subproducts-box-left-bottom">
+         {{item.sele}}RMB             
+        </view>
+        <view class="Subproducts-box-left-btn">
+         <navigator url="../details/detail?id={{item.id}}">
+        buy now
+        </navigator>
+        </view>
+      </view>
+    </view>
 </view>

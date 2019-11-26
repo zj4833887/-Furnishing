@@ -1,4 +1,5 @@
 //app.js
+const {_get}=require('./utils/http.js')
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -9,6 +10,16 @@ App({
     // 登录
     wx.login({
       success: res => {
+        if(res.code){
+          _get('/api/wxlogin',{code:res.code})
+            .then(res => {
+            if(res.code==200){
+              this.globalData.openid=res.url
+            }
+            }).catch(rej=>{
+              console.log(rej)
+            })
+        }
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
@@ -34,6 +45,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    openid:'',
   }
 })

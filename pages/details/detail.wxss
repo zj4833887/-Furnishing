@@ -1,0 +1,285 @@
+/* pages/detail/detail.wxss */
+.container{
+  width:100%;
+  padding:0;
+  margin:0;
+}
+.bg-color{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  background: #F6F6F6;
+}
+/* nav开始 */
+.nav{
+  width:100%;
+  height:auto;
+  background: #fff;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 9;
+  box-shadow: 0 10rpx 18rpx 0 rgba(0, 0, 0, 0.3);
+}
+.nav-top{
+  width:100%;
+  height:88rpx;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items:center;
+  padding:0 24rpx;
+}
+.nav-top .left image{
+  width:30rpx;
+  height:30rpx;
+}
+.nav-top .logo image{
+  width:92rpx;
+  height:30rpx;
+}
+.nav-top .right image{
+  width:36rpx;
+  height:36rpx;
+}
+.nav-font{
+  width:100%;
+  height:88rpx;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items:center;
+  padding:0 24rpx;
+}
+.nav-font navigator{
+  font-size: 24rpx;
+  color:#515151;
+}
+/* 轮播图开始 */
+.banner-box{
+ width:100%;
+  height:384rpx;
+  margin: 184rpx 0 0 0;
+}
+.banner-box swiper{
+  width: 100%;
+  height: 100%;
+}
+.banner-box swiper swiper-item{
+  width: 100%;
+  height: 100%;
+}
+swiper-item .banner{
+  width: 100%;
+  height: 100%;
+}
+/* 详情描述开始  */
+.description-box{
+  width: 666rpx;
+  height: 449rpx;
+  margin: 64rpx auto 0;
+}
+.description-box .des-title{
+  font-size: 30rpx;
+  line-height: 36rpx;
+  color: #000;
+  font-weight:bold;
+  
+}
+.description-box .des-line{
+  width: 100%;
+  height: 2rpx;
+}
+.description-box .des-words-box{
+  width: 100%;
+  margin: 28rpx 0 0 0;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  color:#000;
+}
+.des-words-box .des1{
+  width: 100%;
+  overflow: hidden;
+}
+.des-words-box .des1 .des-right{
+  float: left;
+  margin-left: 27rpx;
+}
+.des-words-box .des1 .des-left{
+  float: left;
+}
+.price-box{
+  margin: 33rpx 0 0 0;
+  height: 80rpx;
+  overflow: hidden;
+}
+.price-box .price{
+  height: 40rpx;
+  overflow: hidden;
+}
+.price-box .price .money{
+  float: left;
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #000;
+}
+.price-box .price .rmb{
+  float: left;
+  margin: 12rpx 0 0 0;
+  font-size: 18rpx;
+  color: #000;
+}
+.des-num-box{
+  width: 602rpx;
+  height: 44rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.des-num-box .num-words{
+  float: left;
+  font-size: 24rpx;
+  line-height: 36rpx;
+}
+.des-num-box .number-box{
+  float: left;
+  width: 162rpx;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.number-box .amount{
+  width: 43rpx;
+  height: 43rpx;
+}
+.amount .setamount{
+  width: 100%;
+  height: 100%;
+}
+.number-box .number{
+  font-size: 24rpx;
+  line-height: 36rpx;
+}
+/* 商品详情开始 */
+.detail-box{
+  width: 100%;
+}
+/* 标题开始 */
+.goods-title{
+ width:auto;
+ height:auto;
+ margin-top:79rpx;
+ margin-bottom:58rpx;
+}
+.goods-title-xian{
+  width:147rpx;
+ margin: 0 auto;
+}
+.goods-title-duan{
+ width:47rpx;
+ height:2rpx;
+ background:#FFCB3F;
+}
+.goods-title-chang{
+  width:147rpx;
+  height:1rpx;
+  background: #D7D7D7;
+  margin-top:8rpx;
+}
+.goods-title-en{
+  font-size: 18rpx;
+  font-family: "ArialMT";
+  margin-top:5rpx;
+  color:#000;
+  text-align: center;
+}
+.goods-title-cn{
+  display: flex;
+  justify-content: center;
+  font-size: 32rpx;
+  margin-top:10rpx;
+}
+.goods-title-cn .cn-l{
+  margin-right:10rpx;
+  font-weight: Regular;
+  color:#000;
+}
+.goods-title-cn .cn-r{
+  color:#FFCB3F;
+  font-weight: bold;
+  margin-left:10rpx;
+}
+.goods-title-b{
+  width:33rpx;
+  height:2rpx;
+  margin:17rpx auto 0;
+  background: #000;
+}
+.look-img{
+  width: 641rpx;
+  height: 548rpx;
+  margin: 0 auto;
+  background: #fff;
+}
+.look-img .look{
+  width: 100%;
+  height: 100%;
+}
+.back-img{
+  width: 100%;
+  height: 414rpx;
+  margin-top: 108rpx;
+}
+.back-img .back{
+  width: 100%;
+  height: 100%;
+}
+.detail-words{
+  font-size: 24rpx;
+  line-height: 36rpx;
+  text-align: center;
+}
+.service-box{
+  width: 100%;
+}
+.service-box .service-img{
+  width: 660rpx;
+  height: 192rpx;
+  margin: 0 auto;
+}
+.service-img .service{
+  width: 100%;
+  height: 100%;
+}
+/* 底部开始 */
+.footer-box{
+  width: 100%;
+  height: 98rpx;
+  margin-top: 20rpx;
+  border-top:2rpx #eeeeee solid; 
+  display: flex;
+  justify-content: space-between;
+}
+.footer-box .shoucang-box{
+  width: 128rpx;
+  height: 100%;
+  border-right:2rpx #eeeeee solid; 
+}
+.shoucang-box .shoucang-words{
+  font-size: 20rpx;
+  line-height: 36rpx;
+  text-align: center;
+}
+.cart-box{
+  font-size: 28rpx;
+  line-height: 98rpx;
+  text-align: center;
+}
+.nowpay{
+  width: 309rpx;
+  height: 100%;
+  font-size: 28rpx;
+  line-height: 98rpx;
+  color: #fff;
+  text-align: center;
+  background: #FFCB3F;
+}

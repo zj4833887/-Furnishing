@@ -1,21 +1,225 @@
 /**index.wxss**/
-.userinfo {
+page{
+  background: #F6F6F6;
+}
+.box{
+ margin:0 25rpx;
+background: #F6F6F6;
+}
+.herad{
+  width: 100%;
+  height: 100rpx;
+  background: sandybrown;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  padding: 0 10prx;
+}
+.container{
+padding: 0;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+swiper-item>image{
+  width: 100%;
+  height: 100%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.page-body{
+  width: 100%;
+  height: 100%;
 }
-
-.usermotto {
-  margin-top: 200px;
+.cname{
+  width: 140rpx;
+  height: 30rpx;
+  margin: 0 auto;
+  font-size: 18rpx;
+  text-align: center;
 }
+.col{
+  color: yellow;
+}
+.name{
+  width: 140rpx;
+  height: 60rpx;
+  margin: 0 auto;
+  font-size: 32rpx;
+  text-align: center;
+}
+.banner{
+        height:100%; 
+        width:100%;
+        display: flex;
+        display: -webkit-box;
+        flex-direction: column;
+  } 
+.banner_Item{ 
+       width: 309rpx;
+       height: 511rpx;
+       background-color:#FFFFFF;
+       margin-right:24rpx;
+  } 
+  .new-top>image{
+    width: 100%;
+    height: 100%;
+  }
+  .new-top{
+    width: 309rpx;
+    height: 288rpx;
+    background: salmon;
+  }
+  .new-top>img{
+    width: 100%;
+    height: 100%;
+  }
+  .new-bottom-cname{
+    width: 86rpx;
+    height: 14rpx;
+    margin: 30rpx 0 0 17rpx;
+    font-size: 18rpx;
+    color: #000000;
+    overflow:hidden;
+  }
+  .new-bottom-name{
+    width: 253rpx;
+    height: 26rpx;
+    margin: 10rpx 0 0 17rpx;
+    font-size: 24rpx;
+    color: #000000;
+    overflow:hidden;
+  }
+  .new-bottom-box{
+    width: 100%;
+    height: 43rpx;
+    margin: 30rpx 0 0;
+    overflow:hidden;
+  }
+  .new-bottom-sale{
+    width: 108rpx;
+    height: 100%;
+    line-height: 42rpx;
+    font-size: 26rpx;
+    margin-left: 18rpx;
+    overflow:hidden;
+    float: left;
+  }
+  .new-bottom-right{
+    width: 152rpx;
+    height: 43rpx;
+    background: #FFCB3F;
+    float: right;
+    margin-right: 23rpx;
+    font-size: 22rpx;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 42rpx;
+    overflow:hidden;
+  
+  }
+  /* 热销产品开始 */
+  .kong{
+    width: 100%;
+    height: 90rpx;
+  }
+  .product{
+    width: 699rpx;
+    height: 100%;
+    background: #FFFFFF;
+    margin:0 auto;
+    padding-top: 111rpx;
+  }
+  .product-img{
+    width: 625rpx;
+    height: 262rpx;
+    margin:0 auto;
+  }
+  .product-img>image{
+    width: 100%;
+    height: 100%;
+  }
+  .product-words{
+    width: 263rpx;
+    height: 50rpx;
+    color: #000000;
+    font: 30.75rpx;
+    margin: 58rpx 0 0 60rpx;
+    overflow:hidden;
+  }
+  .product-words-wz{
+    width: 376rpx;
+    height: 100%;
+    font-size: 20rpx;
+    color: #000000;
+    margin: 14rpx 0 0 60rpx;
+    overflow:hidden;
+  }
+  .product-sale{
+    width: 115rpx;
+    height: 100%;
+    margin: 109rpx 0 0 63rpx;
+    font-size: 30rpx;
+    /* overflow:hidden; */
+  }
+  .product-sale-now{
+    width: 86rpx;
+    height: 100%;
+    font-size:18rpx;
+    margin: 27rpx 0 38rpx 63rpx;
+    overflow:hidden;
+  }
+  /* 子产品开始 */
+  .Subproducts-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .Subproducts-box-wz{
+    font-size: 18rpx;
+    color: #000000;
+  }
+  .Subproducts-box-wz-bottom{
+    font-size: 26rpx;
+    color: #000000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .Subproducts-box-left{
+     width: 338rpx;
+     height: 416rpx;
+     background: #FFFFFF;
+     overflow: hidden;
+      margin-top: 22rpx;
+  }
+  .Subproducts-box-left-top{
+    width: 213rpx;
+    height: 56rpx;
+    margin: 16rpx 0 0 45rpx;
+  }
+  .Subproducts-box-left-center{
+    width: 233rpx;
+    height: 233rpx;
+    margin-top: 13rpx;
+    margin-left: 16rpx;
+  }
+  .Subproducts-box-left-center>image{
+    width: 100%;
+    height: 100%;
+  }
+  .Subproducts-box-left-bottom{
+    width: 88rpx;
+    height: 21rpx;
+    margin-top: 28rpx;
+    margin-left: 26rpx;
+    font-size: 26rpx;
+    color: #000000;
+  }
+  .Subproducts-box-left-btn{
+    width: 90rpx;
+    height: 15rpx;
+    margin-top: 15rpx;
+    margin-left: 43rpx;
+     font-size: 18rpx;
+    color: #000000;
+  }

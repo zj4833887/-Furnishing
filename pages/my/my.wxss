@@ -1,0 +1,87 @@
+.box{
+  width: 100%;
+  height: 100%;
+  margin: 0 24rpx;
+}
+.my-heard{
+width:702rpx;
+height:310rpx;
+background:rgba(255,255,255,1);
+box-shadow:0rpx 1rpx 21rpx 0rpx rgba(118,118,118,0.17);
+border-radius:10rpx;
+margin-top: 48rpx;
+display: flex;
+flex-flow:wrap;
+
+}
+.my-heard-top{
+  width: 100%;
+  height: 155rpx;
+  background: salmon;
+}
+.my-heard-left{
+  float: left;
+}
+.my-heard-wz{
+  width:163rpx;
+  height:35rpx;
+  font-size:26rpx;
+  margin: 54rpx 0 0 49rpx;
+}
+.my-heard-edit{
+  width:114rpx;
+  height:18rpx;
+  font-size:18rpx;
+  margin: 9rpx 0 0 49rpx;
+}
+.my-heard-right{
+  width:91rpx;
+  height:91rpx;
+  float: right;
+  border-radius:50%;
+  background: saddlebrown;
+  margin: 39rpx 55rpx 0 0;
+  overflow: hidden;
+}
+.my-heard-right>image{
+  width: 100%;
+  height: 100%;
+}
+#box{
+    display: flex;
+    justify-content: space-around;
+}
+.my-heard-box{
+  width:75rpx;
+  height:100%;
+  font-size:24rpx;
+  line-height:20rpx;
+  background: saddlebrown;
+}
+/* 中间部分开始 */
+.my-center-box{
+  width:702rpx;
+  height:376rpx;
+  background:rgba(255,255,255,1);
+  box-shadow:0rpx 1rpx 21rpx 0rpx rgba(118,118,118,0.17);
+  border-radius:10rpx;
+  margin-top: 24rpx;
+  display: flex;
+  flex-flow:wrap;
+  
+}
+.my-center-left{
+   width: 234rpx;
+   height: 114rpx;
+   background: skyblue;
+}
+/* 底部开始 */
+.my-bottom{
+  width:702rpx;
+  height:242rpx;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 1px 21px 0px rgba(118,118,118,0.17);
+  border-radius:10px;
+  background: saddlebrown;
+  margin: 27rpx 0 0 0;
+}
